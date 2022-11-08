@@ -1,0 +1,25 @@
+span{
+    color: red;
+}
+label{
+    float: right;
+}
+h1{
+    text-align: center;
+}
+#champs{
+    float: right;
+    margin-right: 10%;
+    clear: both;
+}
+.buttons{
+    text-align: center;
+    margin-top: 5%;
+}
+.button{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+td{
+    padding-bottom: 5%;
+}

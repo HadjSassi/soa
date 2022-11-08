@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+  function calcule(x){
+    console.log(x);
+    var xx = Math.pow(x,2);
+    alert("Le carrée de "+x+" est "+xx);
+  }
+</script>
+<body>
+
+
+<form name="formulaire">
+  <input type="number" id="entier" name ="entier">
+  <input type="button" value="Calculer le carré" onclick="calcule(entier.value)" name="calcul">
+</form>
+
+</body>
+</html>

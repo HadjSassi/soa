@@ -1,0 +1,21 @@
+*{
+    font-family: "Ubuntu Mono";
+    color : orangered;
+}
+h1,h2,h3,h4,h5,h6, em{
+    color : #8e3314;
+    font-family: "Ubuntu";
+}
+
+p{
+    margin: 2% 10% 0% 10%;
+}
+
+.interesting{
+    color: darkred;
+    font-size: 100%;
+}
+.interesting:hover{
+    color: black;
+    font-size: 150%;
+}

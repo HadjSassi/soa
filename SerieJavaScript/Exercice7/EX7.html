@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMATION</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script rel="script" src="verification.js"></script>
+</head>
+<body>
+
+<h1>INSCRIPTION</h1>
+
+<form name="formulaire" action="#"
+      onsubmit="verif(formulaire.username.value,formulaire.cin.value,formulaire.email.value, formulaire.niveau.value, formulaire.modulee.value);return false ;">
+
+    <table>
+        <tr>
+            <td><label for="username">Nom et Prénom <span>*</span> : </label></td>
+            <td><input name="username" id="username" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="cin">CIN <span>*</span> : </label></td>
+            <td><input name="cin" id="cin" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="Email">Email <span>*</span> : </label></td>
+            <td><input name="email" id="Email" type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Niveau :</label></td>
+            <td>
+                <br>
+                <br>
+                <input type="radio" checked name="niveau"> <span style="color : black;">Secondaire</span>
+                <input type="radio" name="niveau"> <span style="color : black;">Universitaire</span>
+                <input type="radio" name="niveau"> <span style="color : black;">Autre</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="formaitonss">Modules de formation :</label></td>
+            <td><br><br><br>
+                <textarea id="formaitonss" name="modulee" rows="3" cols="15">Bureautique
+SE et Réseau info
+TIC</textarea>
+            </td>
+        </tr>
+
+    </table>
+    <p id="champs">(<span>*</span>) Champs obligatoires.</p>
+
+    <div class="buttons">
+        <input class="button" type="submit" value="Envoyer"/>
+        <input class="button" type="reset" value="Annuler"/>
+    </div>
+</form>
+
+<p id="finalone"></p>
+
+</body>
+</html>

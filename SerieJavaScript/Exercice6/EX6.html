@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul</title>
+    <script>
+        function evaluer(x) {
+            var resultt = eval(x);
+            console.log(resultt);
+            document.forms.forumlaire.results.value = resultt;
+        }
+        function show(){
+            if(document.forms.forumlaire.results.value !== '')
+            document.getElementById("valueP").innerHTML= document.forms.forumlaire.expression.value + " = "+  document.forms.forumlaire.results.value;
+        }
+    </script>
+</head>
+<body>
+<form name="forumlaire">
+    <input type="text" name="expression">
+    <input type="button" value="=" onclick="evaluer(expression.value)">
+    <input type="text" id="uuu" name="results">
+</form>
+<a href="#" onclick="show()">voir</a>
+<p id="valueP"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Moyenne(dc1, dc2, ds) {
+            return ((dc1 + dc2 + 2 * ds) / 4);
+        }
+    </script>
+</head>
+<body>
+
+<script>
+
+    var dc1 = Number(prompt("Donner le note du controle 1"));
+    var dc2 = Number(prompt("Donner le note du controle 2"));
+    var ds = Number(prompt("Donner le note du synthése"));
+    var eva = Moyenne(dc1,dc2,ds);
+    document.writeln("La moyennde de Iskander est "+eva);
+
+</script>
+
+</body>
+</html>
